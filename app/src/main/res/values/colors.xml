@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    # color Picker Site : https://www.colorhexa.com/26348c
+
+    <color name="colorPrimary">#3143B4</color>
+    <color name="colorPrimaryDark">#26348c</color>
+    <color name="colorAccent">#768BE4</color>
+
+    # Default Color
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+
+    # Text Main Color
+    <color name="colorMainBackground">#F5F5F5</color>
+    <color name="colorMainBlack">#1a1a1a</color>
+    <color name="colorSubBlack">#222222</color>
+    <color name="colorActiveBlue">#3143B4</color>
+    <color name="colorSubBlueR">#768BE4</color>
+    <color name="colorSubBlueRT">#33768BE4</color>
+    <color name="colorSubBlueL">#ACBCFF</color>
+    <color name="colorDarkBlue">#0D1A52</color>
+
+    <color name="colorMainRed">#7D3240</color>
+    <color name="colorIndicatorRed">#FDC7AB</color>
+    <color name="colorIndicatorYellow">#FDF1AB</color>
+    <color name="colorIndicatorGreen">#B1FDAB</color>
+
+    # Text Gray Color
+    <color name="colorGrayFB">#FBFBFB</color>
+    <color name="colorGrayBE">#BEBEBE</color>
+    <color name="colorGray80">#808080</color>
+    <color name="colorGray77">#777777</color>
+    <color name="colorGray64">#646464</color>
+    <color name="colorGray54">#545353</color>
+    <color name="colorGray4D">#4D4D4D</color>
+
+    <color name="colorKakao">#FFCD00</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="colorReadYellow">#FBE467</color>
+    <color name="colorPlayGreen">#B7FB67</color>
+    <color name="colorPauseRed">#FB7E67</color>
+
+</resources>

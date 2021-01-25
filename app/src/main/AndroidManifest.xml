@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jwlks.healthble">
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.jwlks.healthble.init.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.jwlks.healthble.main.NavigationActivity"/>
+        <activity android:name="com.jwlks.healthble.device.DeviceScanActivity" android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name="com.jwlks.healthble.device.DeviceControlActivity" android:theme="@style/Theme.AppCompat.Light"/>
+
+        <activity android:name="com.jwlks.healthble.health.HealthDetailRealtime"/>
+        <activity android:name="com.jwlks.healthble.play.PlayExerciseInit"/>
+        <activity android:name="com.jwlks.healthble.play.PlayExerciseMain"/>
+
+        <service android:name="com.jwlks.healthble.device.BluetoothLeService" android:enabled="true"/>
+
+
+    </application>
+
+</manifest>

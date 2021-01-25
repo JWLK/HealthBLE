@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorMainBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorWhite"/>
+
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Sub Top Title Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/colorWhite">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/button_back"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_arrow_back_48"
+                        android:scaleType="fitCenter"
+                        android:scaleX=".8"
+                        android:scaleY=".8"
+                        android:background="@color/transparent"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="실시간 몸상태 확인하기 확인"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/nanum_square_bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- EMG Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:layout_marginVertical="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginVertical="2dp"
+                        android:text="실시간 EMG"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorDarkBlue"
+                        android:fontFamily="@font/nanum_square_bold"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/button_emg_trigger"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/colorGray80"
+                            android:paddingHorizontal="15dp"
+                            android:text="OFF"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="@font/nanum_square_bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart_emg"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

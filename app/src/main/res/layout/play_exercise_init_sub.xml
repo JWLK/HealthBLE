@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkBlue"
+    android:paddingVertical="0dp"
+    android:paddingHorizontal="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="50dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/routine_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="운동 시작"
+            android:textSize="40sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/nanum_square_regular"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_running"
+                android:tint="@color/colorWhite"
+                android:layout_marginEnd="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘 하루도 힘차게!\n타이머를 설정하고 운동을 시작해보세요!"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginHorizontal="3dp"
+                android:fontFamily="@font/nanum_square_regular"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
